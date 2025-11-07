@@ -16,14 +16,14 @@ const Index = () => {
         
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center space-y-8 animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold text-foreground leading-tight">
-            Beautiful by
+            Madras Engineering
             <span className="block bg-gradient-secondary bg-clip-text text-transparent">
-              Design
+              College
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Experience the perfect blend of aesthetics and functionality. Built for the modern web.
+            A Legacy of Excellence in Engineering Education Since 1794
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -54,36 +54,36 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Powerful Features
+              Why Choose MEC
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to create stunning experiences
+              India's oldest technical institution with world-class facilities
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard
               icon={Sparkles}
-              title="Modern Design"
-              description="Beautiful, responsive interfaces that adapt to any screen size perfectly."
+              title="Rich Heritage"
+              description="Established in 1794, MEC is the oldest engineering college in India."
               delay={0}
             />
             <FeatureCard
               icon={Zap}
-              title="Lightning Fast"
-              description="Optimized performance ensures your users get the best experience."
+              title="Academic Excellence"
+              description="Top-tier faculty and cutting-edge research facilities for world-class education."
               delay={100}
             />
             <FeatureCard
               icon={Globe}
-              title="Global Ready"
-              description="Built to scale globally with enterprise-grade infrastructure."
+              title="Global Recognition"
+              description="Alumni network spanning the globe with leaders in technology and innovation."
               delay={200}
             />
             <FeatureCard
               icon={Shield}
-              title="Secure"
-              description="Industry-leading security practices keep your data protected."
+              title="Industry Connect"
+              description="Strong partnerships with leading companies for placements and internships."
               delay={300}
             />
           </div>
@@ -95,16 +95,16 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative rounded-3xl overflow-hidden bg-gradient-secondary p-12 md:p-16 text-center space-y-6 animate-scale-in shadow-glow-secondary">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Ready to get started?
+              Join the Legacy
             </h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              Join thousands of users who are already creating amazing experiences.
+              Be part of India's most prestigious engineering institution and shape your future.
             </p>
             <Button 
               size="lg"
               className="bg-background text-foreground hover:bg-background/90 text-lg px-8 py-6 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
             >
-              Start Building Now
+              Apply Now
             </Button>
           </div>
         </div>
