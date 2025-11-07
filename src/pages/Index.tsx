@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
-import { Sparkles, Zap, Globe, Shield } from "lucide-react";
+import { Sparkles, Zap, Globe, Shield, Brain, Code, Database, Laptop, Network, BarChart } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import mecLogo from "@/assets/mec-logo.png";
 
@@ -51,18 +51,22 @@ const Index = () => {
             </Button>
           </div>
           
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-secondary bg-clip-text text-transparent">230+</div>
-              <div className="text-sm md:text-base text-muted-foreground">Years of Legacy</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-secondary bg-clip-text text-transparent">230+</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Years Legacy</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-secondary bg-clip-text text-transparent">15+</div>
-              <div className="text-sm md:text-base text-muted-foreground">Departments</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-secondary bg-clip-text text-transparent">6</div>
+              <div className="text-xs md:text-sm text-muted-foreground">UG Programs</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-secondary bg-clip-text text-transparent">10k+</div>
-              <div className="text-sm md:text-base text-muted-foreground">Alumni Worldwide</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-secondary bg-clip-text text-transparent">15+</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Departments</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-secondary bg-clip-text text-transparent">10k+</div>
+              <div className="text-xs md:text-sm text-muted-foreground">Alumni</div>
             </div>
           </div>
         </div>
@@ -78,37 +82,49 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Why Choose MEC
+              Courses Offered
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              India's oldest technical institution with world-class facilities
+              Choose from our cutting-edge engineering programs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FeatureCard
-              icon={Sparkles}
-              title="Rich Heritage"
-              description="Established in 1794, MEC is the oldest engineering college in India."
+              icon={Code}
+              title="B.Tech CSE"
+              description="Computer Science and Engineering - Master the fundamentals of computing and software development."
               delay={0}
             />
             <FeatureCard
-              icon={Zap}
-              title="Academic Excellence"
-              description="Top-tier faculty and cutting-edge research facilities for world-class education."
+              icon={Laptop}
+              title="B.Tech IT"
+              description="Information Technology - Build expertise in IT infrastructure, networks, and enterprise systems."
               delay={100}
             />
             <FeatureCard
-              icon={Globe}
-              title="Global Recognition"
-              description="Alumni network spanning the globe with leaders in technology and innovation."
+              icon={Brain}
+              title="B.Tech AIDS"
+              description="Artificial Intelligence and Data Science - Lead the future with AI and advanced data analytics."
               delay={200}
             />
             <FeatureCard
-              icon={Shield}
-              title="Industry Connect"
-              description="Strong partnerships with leading companies for placements and internships."
+              icon={Network}
+              title="B.Tech AIML"
+              description="Artificial Intelligence and Machine Learning - Innovate with cutting-edge AI and ML technologies."
               delay={300}
+            />
+            <FeatureCard
+              icon={BarChart}
+              title="BE CSBS"
+              description="Computer Science and Business Systems - Bridge technology and business for digital transformation."
+              delay={400}
+            />
+            <FeatureCard
+              icon={Database}
+              title="B.Tech ECE"
+              description="Electronics and Communication Engineering - Pioneer innovations in electronics and communication."
+              delay={500}
             />
           </div>
         </div>
