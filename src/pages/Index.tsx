@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Sparkles, Zap, Globe, Shield } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import mecLogo from "@/assets/mec-logo.png";
 
 const Index = () => {
   return (
@@ -15,15 +16,23 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-primary opacity-60" />
         
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center space-y-8 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold text-foreground leading-tight">
-            Madras Engineering
-            <span className="block bg-gradient-secondary bg-clip-text text-transparent">
-              College
+          <div className="flex justify-center mb-8">
+            <img 
+              src={mecLogo} 
+              alt="Madras Engineering College Logo" 
+              className="w-32 h-32 md:w-40 md:h-40 animate-scale-in drop-shadow-2xl"
+            />
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight">
+            Madras Engineering College
+            <span className="block text-3xl md:text-4xl mt-4 bg-gradient-secondary bg-clip-text text-transparent">
+              Kolathur, Chennai
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A Legacy of Excellence in Engineering Education Since 1794
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            India's First Engineering Institution - A Legacy of Excellence Since 1794
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -31,15 +40,30 @@ const Index = () => {
               size="lg" 
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 rounded-xl font-semibold hover:scale-105"
             >
-              Get Started
+              Apply for Admission
             </Button>
             <Button 
               size="lg" 
               variant="outline"
               className="border-2 border-primary/50 hover:bg-primary/10 text-lg px-8 py-6 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
             >
-              Learn More
+              Explore Campus
             </Button>
+          </div>
+          
+          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 text-center">
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-secondary bg-clip-text text-transparent">230+</div>
+              <div className="text-sm md:text-base text-muted-foreground">Years of Legacy</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-secondary bg-clip-text text-transparent">15+</div>
+              <div className="text-sm md:text-base text-muted-foreground">Departments</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-secondary bg-clip-text text-transparent">10k+</div>
+              <div className="text-sm md:text-base text-muted-foreground">Alumni Worldwide</div>
+            </div>
           </div>
         </div>
 
