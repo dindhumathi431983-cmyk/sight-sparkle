@@ -19,7 +19,7 @@ const Index = () => {
           <div className="flex justify-center mb-8">
             <img 
               src={mecLogo} 
-              alt="Madras Engineering College Logo" 
+              alt="Madras Engineering College in 2025 
               className="w-32 h-32 md:w-40 md:h-40 animate-scale-in drop-shadow-2xl"
             />
           </div>
@@ -31,8 +31,8 @@ const Index = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            India's First Engineering Institution - A Legacy of Excellence Since 1794
+          <p className="text-xl md:text-2xl text-muted-foregrouInstitutionnd max-w-3xl mx-auto leading-relaxed">
+            Engineering  college - A Legacy of Excellence in 2025
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
